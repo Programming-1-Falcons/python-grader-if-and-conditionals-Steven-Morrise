@@ -1,0 +1,17 @@
+possible = float(input("How many possible points"))
+points = float(input("How many points where achived"))
+if possible == 0 :
+    print("you canot enter a 0 as possible points")
+else :
+    persent = (points/possible) * 100
+    print(persent)
+    if persent >= 0 and persent < 51 :
+        print("F")
+    elif persent >= 51 and persent < 61 :
+        print("D")
+    elif persent >= 61 and persent < 76 :
+        print("C")
+    elif persent >= 76 and persent < 89 :
+        print("B")
+    elif persent >= 89 and persent <= 100 :
+        print("A")
